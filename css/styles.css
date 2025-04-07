@@ -25,4 +25,46 @@ nav ul {
 body {
   margin: 0;
   font-family: sans-serif;
+  color: aliceblue;
+  background-color: var(--background-color);
+  min-height: 500vh;
+
 }
+
+:root {
+  --background-color: #131313;
+  --color-red: #ff0000;
+  --width-scroll: 10px;
+
+}
+.scroll-line {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: var(--width-scroll);
+  height: 20px;
+  background-color: var(--color-red);
+}
+
+.title {
+  position: fixed;
+  margin-top: 40px;
+}
+
+.RGB-color-button{
+  position: fixed;
+  margin-top: 100px;
+
+}
+
+.HEXA-color-button{
+  position: fixed;
+  margin-top: 100px;
+  margin-left: 200px;
+}
+
+/* .mouse{
+  width: 20px;
+  height: 20px;
+  background-color: green;
+} */
