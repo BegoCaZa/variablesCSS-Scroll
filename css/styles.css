@@ -1,3 +1,11 @@
+:root {
+  --background-color: #131313;
+  --color-red: #ff0000;
+  --width-scrollBar:10px;
+  --mousePosition-X:0;
+  --mousePosition-Y:0;
+
+}
 * {
   box-sizing: border-box;
 }
@@ -28,20 +36,15 @@ body {
   color: aliceblue;
   background-color: var(--background-color);
   min-height: 500vh;
+ 
 
 }
 
-:root {
-  --background-color: #131313;
-  --color-red: #ff0000;
-  --width-scroll: 10px;
-
-}
 .scroll-line {
   position: fixed;
   top: 0;
   left: 0;
-  width: var(--width-scroll);
+  width: var(--width-scrollBar);
   height: 20px;
   background-color: var(--color-red);
 }
@@ -63,8 +66,13 @@ body {
   margin-left: 200px;
 }
 
-/* .mouse{
+.mouse{
   width: 20px;
   height: 20px;
   background-color: green;
-} */
+  position:fixed;
+  top:var(--mousePosition-X);
+  left:var(--mousePosition-Y);
+  pointer-events: none; 
+  /* el cuadro queda por enmedio del cursor y el click y esto me estorba; lo que busco es que ignore ese click y por eso agrego el pointer-events*/
+} 
